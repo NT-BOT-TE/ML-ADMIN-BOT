@@ -143,11 +143,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN)
-           parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="👮 My Boss", url="https://t.me/NT_BOT_ADMIN"
-                     [InlineKeyboardButton(text="🎟️ Movie Group", url="https://t.me/+tWV2vbkv6z5lYTI9"),
-                     [InlineKeyboardButton(text="📡 Update Channel", url="https://t.me/NT_BOT_CHANNEL")],
+                parse_mode=ParseMode.MARKDOWN) 
     else:
         update.effective_message.reply_text("ഞാൻ ജീവനോടെ ഉണ്ട് 😂")
 
