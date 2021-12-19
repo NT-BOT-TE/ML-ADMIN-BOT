@@ -146,7 +146,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 
            parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="👮 My Boss", url="https://t.me/NT_BOT_ADMIN"
-                     [InlineKeyboardButton(text="🎟️ Movie Group", url="https://t.me/KeralaBots"),
+                     [InlineKeyboardButton(text="🎟️ Movie Group", url="https://t.me/+tWV2vbkv6z5lYTI9"),
                      [InlineKeyboardButton(text="📡 Update Channel", url="https://t.me/NT_BOT_CHANNEL")],
 
     else:
