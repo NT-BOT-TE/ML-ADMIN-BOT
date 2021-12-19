@@ -26,9 +26,7 @@ PM_START_TEXT = """
 എന്നെ ഉപയോഗിക്കാൻ ആവിശ്യമായ commandകൾ അറിയാൻ /help കൊടുത്താൽ മതിയാകും..
 വിവരങ്ങൾക്കായി /info  ഉപയോഗിക്കാവുന്നതാണ്...
 
-Using standard [Marie](http://telegram.dog/BanhammerMarie_bot) is always gonna be easier.
-എന്റെ ചേച്ചിയായ [Marie](http://telegram.dog/BanhammerMarie_bot) ഉപയോഗിക്കുന്നത് എല്ലായ്പ്പോഴും എളുപ്പമായിരിക്കും. മേരി ചേച്ചിക്ക് English മാത്രമേ അറിയൂ..
-
+© @NT_BOT_ADMIN,@TM_47_BOT
 """
 
 HELP_STRINGS = """
@@ -143,9 +141,9 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN) 
+                parse_mode=ParseMode.MARKDOWN)
     else:
-        update.effective_message.reply_text("ഞാൻ ജീവനോടെ ഉണ്ട് 😂")
+        update.effective_message.reply_text("ജീവനോടെ ഉണ്ട് 😂")
 
 
 # for test purposes
